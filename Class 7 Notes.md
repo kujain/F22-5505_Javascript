@@ -47,8 +47,8 @@ function getUserData() {
 	xhr.onload = function() {
 		if (xhr.status === 200) {
 				let authors = JSON.parse(xhr.responseText); // Getresults
-				for (key in authors.results) { // loop through theresults
-						let author = authors.results[key]; //assign current row to author var
+				for (key in authors.data) { // loop through theresults
+						let author = authors.data[key]; //assign current row to author var
 						console.log(author);
 				}
 		} else {
