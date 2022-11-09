@@ -2,6 +2,27 @@
 
 **For step 9, use this boilerplate: [es6 modules boilerplate](https://github.com/kujain/F22-5505_Javascript/blob/main/boilerplate_es6_starter.zip)**
 
+# 0. SETUP
+Homebrew: package manager for OSX
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+brew update
+
+brew doctor
+```
+Add the brew location in the profile file: 
+```
+export PATH="/opt/homebrew/bin:$PATH"
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.bash_profile
+```
+Install Nodejs (also installs NPM) (version 8): 
+```
+brew install node@18
+```
+to upgrade: `brew upgrade node`
+(or download install from nodejs.org - LTS 18.x)
+
 # 1. Start:
 
 Note, if your node version is v19 or later (current is v18) (check by typing `node -v` and see the resulting version), please downgrade to 18 LTS. V19 is available but it's safes to work with the latest LTS version most of the time. 
